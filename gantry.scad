@@ -8,8 +8,8 @@ include_screw_mount = true;
 
 $fn=120;
 
-offset_y = 0;
-offset_z = -10;
+offset_y = 4;
+offset_z = -7;
 
 baseline_hy = 28.3;
 baseline_hz = 4.9;
