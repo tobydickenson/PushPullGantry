@@ -18,8 +18,8 @@ hy = baseline_hy + offset_y;
 hz = baseline_hz + offset_z;
 
 
-
 hook_depth = 4.95;
+hook_depth_heel = 4;
 hole_diameter = 8.04;
 r = hole_diameter/2;
 
@@ -38,6 +38,7 @@ if(1)
     rotate(-90,[0,0,1])
     rotate(90,[1,0,0])
     linear_extrude(4.6)
+    offset(.5) offset(-.5)
     difference()
     {
         union()
@@ -58,13 +59,13 @@ if(1)
                 {
                     union()
                     {
-                        translate([hy,hz-3]) circle(r+4);
+                        translate([hy,hz-10]) circle(r+4);
                         translate([hy,hz+1]) circle(r+4);
                     }
                     // remove a rectangle below the hook
                     polygon([
-                        [14,hz-hook_depth],
-                        [100,hz-hook_depth],
+                        [14,hz-hook_depth-hook_depth_heel],
+                        [100,hz-hook_depth-hook_depth_heel],
                         [100,-100],
                         [14,-100],
                     ]);
@@ -83,7 +84,7 @@ if(1)
         hull()
         {
             translate([hy,hz]) circle(r);
-            translate([hy,-10]) circle(r);
+            translate([hy,hz-10]) circle(r);
         }
 
         if(include_hook)
@@ -93,15 +94,22 @@ if(1)
             polygon([
                 [hy,hz+r],
                 [hy+r+0.2,hz-hook_depth],
-                [hy-r-0.2,hz-hook_depth],
+                [hy,hz-hook_depth],
             ]);
 
             // remove a rectangle below the hook
             polygon([
-                [14,hz-hook_depth],
-                [100,hz-hook_depth],
+                [14,hz-hook_depth-hook_depth_heel],
+                [100,hz-hook_depth-hook_depth_heel],
                 [100,-100],
                 [14,-100],
+            ]);
+            // remove a rectangle below the hook
+            polygon([
+                [hy,hz-hook_depth],
+                [100,hz-hook_depth],
+                [100,-100],
+                [hy,-100],
             ]);
         }
 
