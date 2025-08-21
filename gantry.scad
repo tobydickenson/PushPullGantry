@@ -2,7 +2,6 @@
 
 include_gantry = true;
 include_gantry_boss = true;
-include_baseline_hook = true;
 include_hook = true;
 include_screw_mount = true;
 
@@ -31,7 +30,7 @@ if(1)
         rotate(45,[0,0,1])
         translate([-23.05,23.75,7.5])
         rotate(90,[0,1,0])
-        import("z-gantry_2x.stl");
+        import("import/z-gantry_2x.stl");
     }
 
     translate([19.3,0,0])
@@ -122,23 +121,5 @@ if(1)
 
     }
 }
-
-
-if(include_baseline_hook)
-{
-    color([1,0,0]) translate([10,0,0])
-    {
-        difference()
-        {
-            // load our first gantry, at the origin
-            translate([-125,19.1,-83.8])
-            rotate(90,[1,0,0])
-            import("hook_original.stl");
-
-            translate([-88,-50,-10]) linear_extrude(100) square(100,100);
-        }
-    }
-}
-
 
 

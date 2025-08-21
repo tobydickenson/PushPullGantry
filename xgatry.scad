@@ -37,7 +37,7 @@ if(1) {
             {
                 // load the opulu gantry, at the origin
                 rotate(180,[1,0,0])
-                import("x-gantry-front_1x.stl");
+                import("import/x-gantry-front_1x.stl");
             }
 
             translate([-46, -11]) rotate(180,[0,0,1]) tab(4,10);
