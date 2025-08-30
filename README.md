@@ -13,6 +13,6 @@ This works with Mark's original [PushPullFeeder](https://github.com/markmaker/Pu
 and [this fork](https://github.com/tobydickenson/PushPullFeeder) with some changes for
 use on the lumenpnp machine.
 
-STL files for immediate printing are in the 'printme' directory.
+STL files for immediate printing are in the `printme` directory.
 
 ![Z Gantry with hook acutator](img/gantry.jpg)
