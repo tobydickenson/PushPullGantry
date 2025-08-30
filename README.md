@@ -1,8 +1,18 @@
 # Lumenpnp Gantry with actuator for PushPull Feeder
 
-The PushPull feeder is actuated by pushing and pulling on a lever with 8mm diameter
-handle. This model contains two parts, to be connected by three M3 bolts:
-- a modification to the standard lumenpnp left z gantry to add a mounting bracket.
-- an actuator hook to mount on that bracket.
+This model is for use with a PushPull feeder on an Opulo lumenpnp machine.
 
-![Z Gantry with hook acutator](gantry.jpg)
+This model includes a copy of the [lumenpnp](https://github.com/opulo-inc/lumenpnp)
+original Z gantry, for the purpose of adding a mounting bracket.
+
+The PushPull feeder is actuated by pushing and pulling on a lever with 8mm diameter
+handle. This model contains an actuator hook corresponding to that handle. The two parts
+should be connected with 3x M3 bolts.
+
+This works with Mark's original [PushPullFeeder](https://github.com/markmaker/PushPullFeeder)
+and [this fork](https://github.com/tobydickenson/PushPullFeeder) with some changes fork
+lumenpnp geometry.
+
+STL files for immediate printing are in the 'printme' directory.
+
+![Z Gantry with hook acutator](img/gantry.jpg)
