@@ -10,8 +10,8 @@ handle. This model contains an actuator hook corresponding to that handle. The t
 should be connected with 3x M3 bolts.
 
 This works with Mark's original [PushPullFeeder](https://github.com/markmaker/PushPullFeeder)
-and [this fork](https://github.com/tobydickenson/PushPullFeeder) with some changes fork
-lumenpnp geometry.
+and [this fork](https://github.com/tobydickenson/PushPullFeeder) with some changes for
+use on the lumenpnp machine.
 
 STL files for immediate printing are in the 'printme' directory.
 
