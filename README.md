@@ -1,4 +1,4 @@
-# Lumenpnp Gantry with actuator for PushPull Feeder
+# Lumenpnp Gantry with Hook for PushPull Feeder
 
 This model is for use with a PushPull feeder on an Opulo lumenpnp machine.
 
